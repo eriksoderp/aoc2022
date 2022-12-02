@@ -24,7 +24,7 @@ def get_points_a(line, diff = 22):
     elif res == 2:
         return points[elf]
 
-def get_points_b(line, diff = 22):
+def get_points_b(line):
     opp, elf = line.split(' ')
     elf = elf.strip()
     if elf == 'X':
