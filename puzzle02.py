@@ -1,14 +1,12 @@
 points = {'X':1, 'Y':2, 'Z':3}
 s = "AXBYCZ"
-def main():
-    f = open("input02.txt", "r")
-    
+def main():    
     total_a = 0
     total_b = 0
-
-    for line in f.readlines():
-        total_a += get_points_a(line)
-        total_b += get_points_b(line)
+    with open("input02.txt") as f:
+        for line in f.readlines():
+            total_a += get_points_a(line)
+            total_b += get_points_b(line)
         
     print("Part a:", total_a)
     print("Part b:", total_b)
