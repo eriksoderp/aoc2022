@@ -25,10 +25,7 @@ def is_contained(a1, a2, b1, b2):
     return False
 
 def is_overlapping(a1, a2, b1, b2):
-    if a1 <= b1 and b1 <= a2 or a1 <= b2 and b2 <= a2:
-        return True
-    
-    if b1 <= a1 and a1 <= b2 or b1 <= a2 and a2 <= b2:
+    if a1 <= b1 and b1 <= a2 or a1 <= b2 and b2 <= a2 or is_contained(a1, a2, b1, b2):
         return True
 
     return False
