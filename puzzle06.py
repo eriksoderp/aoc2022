@@ -6,7 +6,7 @@ def main():
         
         for i, _ in enumerate(l):
             if not a:
-                if len(set(l[i:i-4:-1])) == 4:#len(set([dic[i-j] for j in range(4)])) == 4:
+                if len(set(l[i:i-4:-1])) == 4:
                     print("Part a:", i+1)
                     a = True
 
