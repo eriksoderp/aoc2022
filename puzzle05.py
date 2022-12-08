@@ -27,8 +27,8 @@ def main():
             l2[t-1] = l2[t-1] + l2[f-1][-m:]
             l2[f-1] = l2[f-1][:-m]
         
-        print(''.join([e[-1] for e in l1]))
-        print(''.join([e[-1] for e in l2]))
+        print("Part a:", ''.join([e[-1] for e in l1]))
+        print("Part b:", ''.join([e[-1] for e in l2]))
 
 
 if __name__=="__main__":
